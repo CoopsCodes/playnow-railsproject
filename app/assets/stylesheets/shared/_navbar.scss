@@ -1,34 +1,49 @@
+// the reason there are multiple functions here is because i couldnt override bootstrap
 .navbar_container {
-  height: 70px;
-  width: 95%;
-  margin: 0 auto;
   display: flex;
+  width: 100vw;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-
-  margin-bottom: 25px;
+  background: #1F0B33;
+  height: 50px;
+  z-index: 10;
 }
-
-.navbar_left {
-  padding-left: 20px;
-  font-size: 1.5rem;
-  font-weight: 900;
-  // color: #da2c49;
-  color: #97b147;
+.main a {
+  display: inline-block;
+  width: 150px;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+  border: 1px #40F99B solid;
+  color: #40F99B;
+  background: #473456;
+  padding: 6px 6px;
+  margin-right: 10px;
+  transition: 0.5s;
 }
-
-.navbar_right {
+.main {
+  list-style: none;
 }
-
+.main a:hover {
+  color: #1F0B33;
+  background: #BFFFC5;
+}
+.secondary a {
+  display: inline-block;
+  width: 120px;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+  border: 1px #40F99B solid;
+  color: #40F99B;
+  padding: 6px 6px;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+.secondary a:hover {
+  color: #1F0B33;
+  background: #BFFFC5;
+}
 .secondary {
-  margin-right: 20px;
-  background: #da2c49;
-  padding: 5px 10px;
-  border-radius: 3px;
-  color: #fff;
-  font-weight: 700;
-}
-
-.secondary:hover {
-  background: #97b147;
+  list-style: none;
 }
